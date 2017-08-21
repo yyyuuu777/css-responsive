@@ -3,9 +3,11 @@
 
 body{
     background:#f3f3f3;
+    text-align:center;
     .content-wrap{ 
-        width:360px;
-        margin:0 auto;
+        .form{
+            text-align:left;
+        }
         .form__input--common{
             height:44px;
             box-sizing:border-box;
