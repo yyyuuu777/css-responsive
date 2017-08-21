@@ -8,6 +8,9 @@
     "babel-preset-env": "^1.6.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "gulp-live-server": "^0.0.31",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
     "purecss": "^1.0.0"
   }
 }
