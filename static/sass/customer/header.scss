@@ -3,12 +3,11 @@ header {
     height:80px;
     background:#fff;
     border-bottom:1px solid #ededed;
+    padding:0!important;
     p{
         margin:0;
     }
     .header__head{
-        width:1200px;
-        margin:0 auto;
         height:100%;
         .header__status{
             float:right;

@@ -19,3 +19,43 @@ $input_holder: #AAAAAA;
 .btn:hover{
     cursor:pointer;
 }
+.btn{ 
+    border:none;
+    border-radius:2px;
+}
+.clearfix:after  
+{  
+    content: ".";  
+    clear: both;  
+    height: 0;  
+    visibility: hidden;  
+    display: block;  
+}
+a:hover{
+    cursor:pointer;
+}
+.f--left{
+    float:left;
+}
+.f--right{
+    float:right;
+}
+body{
+    text-align:center;
+    padding-bottom: 160px;
+}
+.l-w{
+    word-spacing: -10px;
+}
+ul{
+    list-style: none;
+}
+.l-wrap{
+  position: relative;
+}
+.l-wrap img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}

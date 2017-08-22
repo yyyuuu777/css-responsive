@@ -1,0 +1,80 @@
+@import "./header.scss";
+@import "./common.scss";
+@import "./footer.scss";
+@import "./res-menu.scss";
+
+$normal_font_size: 14px;
+$input_border: #39c2F0;
+body {
+  background-image: url("../../imgs/main-bg.png");
+  #menu{
+    background: #000;
+    padding-top: 50px;
+  }
+  .left-aside{
+    aside{
+      text-align: center;
+      background: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+      ul{
+        li{
+          padding: 8px 5px;
+        }
+      }
+    }
+    .left-aside__advance{
+      background: #fff;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      &>p:nth-of-type(3){
+        text-align: center;
+      }
+      span{
+        font-size: 14px;
+        color: #666666;
+      }
+      .btn{
+        background: #39C2F0;
+        margin-top: 20px;
+        color: #fff;
+      }
+      h3{
+        background: #39C2F0;
+        font-size: 16px;
+        color: #fff;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+  }
+  aside {
+    text-align: left;
+    margin-top: 10px;
+    .aside__left {
+      margin-bottom: 10px;
+    }
+    .aside__right {
+      button {
+        margin-right: 5px;
+      }
+    }
+    input {
+      border: 1px solid $input_border;
+      height: 28px;
+      padding-left: 5px;
+      margin-left: 20px;
+    }
+    section {
+      button {
+        background: #39C2F0;
+        color: #fff;
+        font-size: $normal_font_size;
+        height: 28px;
+        padding: 1px 0;
+
+      }
+    }
+  }
+}

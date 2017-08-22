@@ -1,0 +1,44 @@
+@import "./header.scss";
+@import "./common.scss";
+@import "./footer.scss";
+
+body{
+    .content-wrap{ 
+        form{
+            text-align:left;
+        }
+        .form__input--common{
+            height:44px;
+            box-sizing:border-box;
+            margin:0 auto;
+            width:100%;
+            display:block;
+            border:1px solid #DDDDDD;
+            padding-left:15px;
+        }
+        .form__email{
+            margin-top:150px;
+        }
+        .form__password{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        .form__btn--common{
+            width:100%;
+            height:44px;
+            text-align:center;
+            font-size:16px;
+            line-height:44px;
+            border-radius:2px; 
+        }
+        .form__btn--main{
+            background:#00C2EE;
+            color: #fff;
+        }
+        .form__btn--helper{
+            border:1px solid #39C2F0;
+            color:#39C2F0;
+        }
+    }
+
+}
