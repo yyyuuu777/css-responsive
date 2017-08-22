@@ -87,15 +87,6 @@ body {
 ul {
   list-style: none; }
 
-.l-wrap {
-  position: relative; }
-
-.l-wrap img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto; }
-
 .footer {
   position: fixed;
   bottom: 0;

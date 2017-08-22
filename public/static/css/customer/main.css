@@ -87,15 +87,6 @@ body {
 ul {
   list-style: none; }
 
-.l-wrap {
-  position: relative; }
-
-.l-wrap img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto; }
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -340,6 +331,16 @@ Add transition to containers so they can push in and out.
     position: relative;
     left: 150px; } }
 
+.res__img--block {
+  position: relative; }
+
+.res__img--block img {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  bottom: 0;
+  margin: auto; }
+
 body {
   background-image: url("../../imgs/main-bg.png"); }
   body #menu {
@@ -350,8 +351,14 @@ body {
     background: #fff;
     font-size: 14px;
     border-radius: 5px; }
-    body .left-aside aside ul li {
-      padding: 8px 5px; }
+    body .left-aside aside ul {
+      padding-left: 0; }
+      body .left-aside aside ul li {
+        padding: 8px 15px 5px 8px; }
+        body .left-aside aside ul li:hover {
+          background: gray;
+          cursor: pointer;
+          color: #fff; }
   body .left-aside .left-aside__advance {
     background: #fff;
     border-radius: 5px;
