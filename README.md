@@ -10,3 +10,8 @@ build flow:
 
     responsve web : you shouldn't use specific px on wrao instead calculate percentage then use pure,
     because if as above , when you view smaller , the center will displacement and display scroll bar;
+
+if need refer : bootstrap -> one line , multi column can't resolve the issue that mobile layout change , in other
+way , if small mobile can't contain all the element or the ele will more small to show , how to deal with it ?
+
+if the response need change the layout

@@ -1,3 +1,6 @@
+$font_normal_size:14px;
+$font_big_size:16px;
+$font_small_size:12px;
 $input_holder: #AAAAAA;
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: $input_holder   ;
@@ -49,4 +52,13 @@ body{
 }
 ul{
     list-style: none;
+}
+.l-wrap{
+  position: relative;
+}
+.l-wrap img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
 }

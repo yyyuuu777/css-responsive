@@ -8,51 +8,80 @@ $normal_font_size: 14px;
 $input_border: #39c2F0;
 body {
   background-image: url("../../imgs/main-bg.png");
-  #menu{
+  #menu {
     background: #000;
     padding-top: 50px;
   }
-  .left-aside{
-    aside{
+  .aside-guide-block {
+    background: #fff;
+
+  }
+  .file-content {
+    margin-top: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    .file-content__content {
+      background: #fff;
+      min-height: 660px;
+    }
+  }
+  .left-aside {
+    aside {
       text-align: center;
       background: #fff;
       font-size: 14px;
       border-radius: 5px;
-      ul{
-          padding-left:0;
-        li{ 
-          padding: 8px 15px 5px 8px;
-          &:hover{
-              background:gray;
-              cursor:pointer;
-              color:#fff;
+      ul {
+        padding-left: 0;
+        li {
+          height: 50px;
+          padding-left: 35%;
+          text-align: left;
+          line-height: 50px;
+          &:hover {
+            background: gray;
+            cursor: pointer;
+            color: #fff;
           }
         }
       }
     }
-    .left-aside__advance{
+    .left-aside__advance {
       background: #fff;
       border-radius: 5px;
       padding-bottom: 20px;
-      &>p:nth-of-type(3){
-        text-align: center;
+      p {
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
       }
-      span{
+      .left-aside__income {
+        margin-top: 10px;
+      }
+      & > p:nth-of-type(2) {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #f3f3f3;
+      }
+      span {
         font-size: 14px;
         color: #666666;
       }
-      .btn{
+      .btn {
         background: #39C2F0;
         margin-top: 20px;
+        font-size: 14px;
         color: #fff;
+        padding: 3px 13px;
       }
-      h3{
+      h3 {
         background: #39C2F0;
         font-size: 16px;
         color: #fff;
         height: 40px;
         text-align: center;
         line-height: 40px;
+        margin-bottom: 0;
       }
     }
   }
@@ -63,8 +92,15 @@ body {
       margin-bottom: 10px;
     }
     .aside__right {
+      .list-img-block{
+        width: 28px;
+        display: inline-block;
+        & img{
+          width: 100%;
+        }
+      }
       button {
-        margin-right: 5px;
+        margin-right: 20px;
       }
     }
     input {
