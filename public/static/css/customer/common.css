@@ -45,7 +45,8 @@ a:hover {
 
 body {
   text-align: center;
-  padding-bottom: 160px; }
+  padding-bottom: 160px;
+  background-image: url("../../imgs/main-bg.png"); }
 
 .l-w {
   word-spacing: -10px; }

@@ -3,9 +3,36 @@
 @import "./footer.scss";
 @import "./res-menu.scss";
 @import "./item.scss";
+@import "./item-l-r.scss";
 
 $normal_font_size: 14px;
 $input_border: #39c2F0;
 body {
+    aside{ 
+        width:100%;
+        background:#fff;
+        text-align:center;
+        ul{
+            margin-top:0;
+            margin-bottom:0;
+            li{
+                float:left;
+                color:#333333; 
+                padding:6px 22px 6px 0;
+            }
+        }
+    }
+    .content-block{
+        margin-top:22px;
+        .content-block__left{
+            padding-right:20px; 
+            .content-block__left__wrap{         
+                background:#fff;
+                width:100%;
+            }
+            
+        }
+
+    }
 
 }

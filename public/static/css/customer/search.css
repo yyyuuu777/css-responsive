@@ -2,8 +2,20 @@ header {
   width: 100%;
   height: 80px;
   background: #fff;
+  position: relative;
   border-bottom: 1px solid #ededed;
   padding: 0 !important; }
+  header .header__menu {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    height: 28px;
+    display: none;
+    width: 28px; }
+    header .header__menu img {
+      width: 100%; }
   header p {
     margin: 0; }
   header .header__head {
@@ -82,7 +94,8 @@ a:hover {
 
 body {
   text-align: center;
-  padding-bottom: 160px; }
+  padding-bottom: 160px;
+  background-image: url("../../imgs/main-bg.png"); }
 
 .l-w {
   word-spacing: -10px; }
@@ -352,5 +365,52 @@ Add transition to containers so they can push in and out.
   left: 15%;
   bottom: 0;
   margin: auto; }
+
+.item-block {
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+  height: 80px; }
+  .item-block img {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .item-block .item-block__right {
+    margin-left: 70px; }
+    .item-block .item-block__right p {
+      margin: 0;
+      padding-top: 15px;
+      font-size: 16px;
+      text-align: left !important;
+      color: #333333; }
+    .item-block .item-block__right .item-block__right__bottom {
+      display: flex;
+      margin-top: 10px; }
+      .item-block .item-block__right .item-block__right__bottom span {
+        font-size: 14px;
+        color: #999999; }
+      .item-block .item-block__right .item-block__right__bottom > span:nth-of-type(1), .item-block .item-block__right .item-block__right__bottom > span:nth-of-type(3) {
+        margin-right: 40px; }
+
+body aside {
+  width: 100%;
+  background: #fff;
+  text-align: center; }
+  body aside ul {
+    margin-top: 0;
+    margin-bottom: 0; }
+    body aside ul li {
+      float: left;
+      color: #333333;
+      padding: 6px 22px 6px 0; }
+
+body .content-block {
+  margin-top: 22px; }
+  body .content-block .content-block__left {
+    padding-right: 20px; }
+    body .content-block .content-block__left .content-block__left__wrap {
+      background: #fff;
+      width: 100%; }
 
 /*# sourceMappingURL=../maps/customer/search.css.map */

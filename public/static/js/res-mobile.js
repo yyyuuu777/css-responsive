@@ -26,7 +26,7 @@
             if (type === "string") {
                 dom.style.display = isHide ? "none" : "block";
             } else if (type === "array") {
-                for (var i = 0, l = type.length; i < l; i++) {
+                for (var i = 0, l = dom.length; i < l; i++) {
                     dom[i].style.display = isHide ? "none" : "block";
                 }
             }
@@ -40,13 +40,16 @@
     var util = new global.Util();
     window.addEventListener('resize', function () {
         var e = document.getElementsByClassName("hide-on-mobile");
+        var menu = document.getElementById('head-menu');
         var r = document.documentElement;
         var view_width = r.getBoundingClientRect().width;
-        if (view_width < 563) {
+        if (view_width < 800) {
             console.log("---->", e);
             e && util.hide(e);
+            util.hide(menu, false);
         } else {
             e && util.hide(e, false);
+            util.hide(menu, true);
         }
     }, false);
 })(window, document);
