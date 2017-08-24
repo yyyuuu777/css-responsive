@@ -25,6 +25,21 @@ header {
       margin-right: 30px;
       font-size: 16px;
       color: #333333; }
+    header .header__head .header__user {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto; }
+      header .header__head .header__user > img:first-child {
+        margin-right: 20px;
+        position: absolute;
+        top: 3px;
+        right: 50px; }
+      header .header__head .header__user > img:last-child {
+        position: absolute;
+        top: -8px;
+        right: 0; }
     header .header__head .header__register {
       float: right;
       font-size: 12px;
@@ -33,11 +48,22 @@ header {
       padding: 3px 7px;
       border-radius: 2px; }
   header .header__right_block {
+    position: relative;
+    padding-right: 100px;
     margin-top: 30px; }
+    header .header__right_block .header__input_search {
+      border: 1px solid #39c2f0;
+      height: 38px;
+      width: 23%;
+      padding-left: 10px; }
     header .header__right_block button {
       background: #39c2F0;
       color: #fff;
-      font-size: 14px; }
+      font-size: 14px;
+      position: absolute;
+      height: 38px;
+      width: 80px;
+      border-radius: 0; }
   header .img-wrap {
     width: 170px;
     height: 44px;
@@ -101,7 +127,9 @@ body {
   word-spacing: -10px; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 .l-wrap {
   position: relative; }

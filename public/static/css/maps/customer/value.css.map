@@ -1,1 +1,1 @@
-{"version":3,"file":"../../customer/value.css","sources":["customer/value.scss"],"sourcesContent":["$font_normal_size:14px;\n$font_big_size:16px;\n$font_small_size:12px;\n"],"names":[],"mappings":""}
+{"version":3,"file":"../../customer/value.css","sources":["customer/value.scss"],"sourcesContent":["$font_normal_size:14px;\n$font_big_size:16px;\n$font_small_size:12px;\n$font_normal_color:#666666;\n$font_strong_color:#333333;\n$main_color: #39c2f0;\n$white: #fff;\n$gray_border: #f3f3f3;\n"],"names":[],"mappings":""}

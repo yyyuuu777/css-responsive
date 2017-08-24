@@ -166,39 +166,52 @@ ul {
     color: #999999;
     font-size: 12px; }
 
-body .content-wrap form {
+body .content-block h3 {
+  text-align: left;
+  font-size: 20px;
+  color: #333333;
+  margin: 20px 0 10px;
+  font-weight: 100; }
+
+body .content-block .content-block__video {
+  width: 100%;
+  height: 520px; }
+
+body .content-block .content-block__des {
+  background: #fff;
   text-align: left; }
+  body .content-block .content-block__des > div:nth-of-type(1) {
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid #f3f3f3; }
+    body .content-block .content-block__des > div:nth-of-type(1) p {
+      flex: 1; }
+    body .content-block .content-block__des > div:nth-of-type(1) > p > span:nth-of-type(1) {
+      margin-right: 40px; }
+    body .content-block .content-block__des > div:nth-of-type(1) > .btn:nth-of-type(1) {
+      background: #fff;
+      border: 1px solid #39c2f0;
+      margin-right: 20px;
+      color: #39c2f0;
+      font-size: 14px; }
+    body .content-block .content-block__des > div:nth-of-type(1) > .btn:nth-of-type(2) {
+      background: #39c2f0;
+      color: #fff;
+      font-size: 14px; }
+    body .content-block .content-block__des > div:nth-of-type(1) button {
+      padding: 2px 8px;
+      height: 28px;
+      margin: auto 0; }
+  body .content-block .content-block__des .tag-block {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    margin-top: 0; }
+    body .content-block .content-block__des .tag-block span {
+      font-size: 14px;
+      color: #39c2f0; }
+    body .content-block .content-block__des .tag-block > span:nth-of-type(1) {
+      color: #666666; }
 
-body .content-wrap .form__input--common {
-  height: 44px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  display: block;
-  border: 1px solid #DDDDDD;
-  padding-left: 15px; }
-
-body .content-wrap .form__email {
-  margin-top: 150px; }
-
-body .content-wrap .form__password {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-body .content-wrap .form__btn--common {
-  width: 100%;
-  height: 44px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 44px;
-  border-radius: 2px; }
-
-body .content-wrap .form__btn--main {
-  background: #00C2EE;
-  color: #fff; }
-
-body .content-wrap .form__btn--helper {
-  border: 1px solid #39C2F0;
-  color: #39C2F0; }
-
-/*# sourceMappingURL=../maps/customer/form.css.map */
+/*# sourceMappingURL=../maps/customer/video_download.css.map */

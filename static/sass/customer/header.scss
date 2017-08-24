@@ -30,6 +30,25 @@ header {
             font-size:16px;
             color:#333333;
         }
+        .header__user
+        {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          &>img:first-child{
+            margin-right: 20px;
+            position: absolute;
+            top: 3px;
+            right: 50px;
+          }
+          &>img:last-child{
+            position: absolute;
+            top: -8px;
+            right:0;
+          }
+        }
         .header__register{
             float:right;
             font-size:12px;
@@ -40,11 +59,23 @@ header {
         }
     }
     .header__right_block{
+        position: relative;
+        padding-right: 100px;
         margin-top: 30px;
+        .header__input_search{
+          border: 1px solid $main_color;
+          height: 38px;
+          width: 23%;
+          padding-left: 10px;
+        }
         button{
             background: #39c2F0;
             color: #fff;
             font-size: $font_normal_size;
+            position: absolute;
+            height: 38px;
+            width: 80px;
+          border-radius: 0;
         }
     }
     .img-wrap{
