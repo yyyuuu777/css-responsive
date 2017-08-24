@@ -18,6 +18,7 @@ body{
    .content-block__des{
        background: $white;
        text-align: left;
+       margin-top: 20px;
        &>div:nth-of-type(1){
          display: flex;
          padding-right: 20px;
@@ -52,12 +53,18 @@ body{
        line-height: 40px;
        padding-left: 20px;
        margin-top: 0;
+       b{
+         font-weight: 100;
+         font-size: $font_normal_size;
+         color: $font_normal_color;
+       }
        span{
          font-size: $font_normal_size;
          color: $main_color;
-       }
-       &>span:nth-of-type(1){
-         color: $font-normal_color;
+         &:hover{
+           border-bottom: 1px solid $main_color;
+           cursor: pointer;
+         }
        }
      }
     }

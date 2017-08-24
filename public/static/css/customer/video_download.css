@@ -179,7 +179,8 @@ body .content-block .content-block__video {
 
 body .content-block .content-block__des {
   background: #fff;
-  text-align: left; }
+  text-align: left;
+  margin-top: 20px; }
   body .content-block .content-block__des > div:nth-of-type(1) {
     display: flex;
     padding-right: 20px;
@@ -208,10 +209,15 @@ body .content-block .content-block__des {
     line-height: 40px;
     padding-left: 20px;
     margin-top: 0; }
+    body .content-block .content-block__des .tag-block b {
+      font-weight: 100;
+      font-size: 14px;
+      color: #666666; }
     body .content-block .content-block__des .tag-block span {
       font-size: 14px;
       color: #39c2f0; }
-    body .content-block .content-block__des .tag-block > span:nth-of-type(1) {
-      color: #666666; }
+      body .content-block .content-block__des .tag-block span:hover {
+        border-bottom: 1px solid #39c2f0;
+        cursor: pointer; }
 
 /*# sourceMappingURL=../maps/customer/video_download.css.map */
