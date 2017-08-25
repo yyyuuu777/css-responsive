@@ -1,0 +1,25 @@
+@import "./header.scss";
+@import "./common.scss";
+@import "./footer.scss";
+@import "./value.scss";
+.content-block{
+    h3{
+      margin-top:150px;
+      font-size:40px;
+      color:#555555;
+    }
+    input{
+        margin-top:50px;
+        height:44px;
+        padding:7px;
+        display:block;
+        margin:0 auto;
+        border:1px solid $gray_border;
+    }
+    button{
+     height:44px;
+     margin-top:20px;
+     background:$main_color;
+     color:#fff;
+    }
+}

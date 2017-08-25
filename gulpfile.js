@@ -3,7 +3,7 @@ var babel = require('gulp-babel');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var gls = require('gulp-live-server');
-
+var watch = require("gulp-watch");
 var res={
     html:'./*.html',
     pages:'./layout/*.html',
@@ -60,10 +60,10 @@ gulp.task('serve', function() {
 });
 
 gulp.task('watch',function(){
-    gulp.watch(res.css,['t-sass']);
-    gulp.watch(res.js,['t-js']);
-    gulp.watch([res.html,res.pages],['t-html']);
-    gulp.watch(res.imgs,['t-imgs']);
+    watch(res.css,['t-sass']);
+    watch(res.js,['t-js']);
+    watch([res.html,res.pages],['t-html']);
+    watch(res.imgs,['t-imgs']);
 });
 gulp.task('build',['t-sass','t-js','t-html','t-imgs']);
 gulp.task('default',['watch','serve']);

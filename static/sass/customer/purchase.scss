@@ -1,0 +1,172 @@
+@import "./header.scss";
+@import "./common.scss";
+@import "./footer.scss";
+@import "./value.scss";
+
+body {
+  .content-block {
+    padding-top: 20px;
+    .content-block__left {
+      background: $white;
+      padding-top: 20px;
+      text-align: center;
+      .top {
+        border-bottom: 1px solid $gray_border;
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 100px;
+        }
+        h3 {
+          font-size: 20px;
+          color: $main_color;
+          margin-top: 12px;
+          margin-bottom: 0;
+        }
+        p {
+          margin-top: 10px;
+          border-bottom: 1px soild $gray_border;
+          padding-bottom: 20px;
+          span {
+            font-size: $font_normal_size;
+            color: $font_normal_color;
+          }
+        }
+      }
+      .middle {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray_border;
+        div {
+          margin-left: 20px;
+          margin-top: 10px;
+          span {
+            font-size: $font_normal_size;
+            color: $font_normal_color;
+          }
+          & > span:nth-of-type(2) {
+            margin-right: 15px;
+          }
+        }
+      }
+      .bottom {
+        margin-top: 20px;
+        padding-left: 20px;
+        h3 {
+          font-weight: 200;
+          font-size: 18px;
+          color: $font_strong_color;
+          text-align: left;
+          margin: 0;
+        }
+        ul {
+          text-align: left;
+          display: flex;
+          padding-bottom: 10px;
+          li {
+            &>p:nth-of-type(1){
+              margin-right: 25px;
+            }
+            p {
+              font-size: $font_normal_size;
+              color: $font_normal_color;
+              &:before {
+                content: "-";
+                width: 10px;
+                margin-right: 6px;
+                height: 10px;
+                font-size: 12px;
+                display: inline-block;
+                border-radius: 10px;
+                color: gray;
+                background: gray;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content-block__right{
+      background: $white;
+      padding-bottom: 120px;
+      margin-left: 20px;
+      padding-left: 20px;
+      h3{
+        text-align: left;
+        padding-left: 20px;
+        font-weight: 200;
+        font-size: $font_big_size;
+        color: $font_strong_color;
+      }
+      .package-list{
+          ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+              margin-right: 14px;
+              min-width: 205px;
+              text-align: center;
+              border: 1px solid #eeeeee;
+               &>p:nth-of-type(1){
+                  color: $main_color;
+                 font-size: 24px;
+               }
+               &>p:nth-of-type(2){
+                 border-radius: 12px;
+                 height: 26px;
+                 margin:10px 56px 0 ;
+                 background: $main_color;
+                 color: $white;
+               }
+              &>p:nth-of-type(3){
+                margin-top: 10px;
+              }
+            }
+          }
+      }
+      .pay-method{
+        position: relative;
+        text-align: center;
+        .vertical-line{
+          height: 20px;
+          background: #A9A9A9;
+          width: 1px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 32px;
+          left: 0;
+          margin: auto;
+        }
+        p{
+          position: relative;
+          display: inline-block;
+          margin-right: 30px;
+          img{
+            height: 40px;
+          }
+          input{
+            position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            left: -18px;
+          }
+        }
+      }
+      .pay-des{
+        h3{
+          font-size: 30px;
+          color: $font_strong_color;
+          text-align: center;
+        }
+        button{
+          background: $main_color;
+          color: $white;
+          height: 44px;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
