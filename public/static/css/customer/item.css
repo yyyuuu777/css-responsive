@@ -1,5 +1,8 @@
 .res__img--block {
-  position: relative; }
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  margin: 0; }
 
 .res__img--block img {
   position: absolute;

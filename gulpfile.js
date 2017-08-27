@@ -36,10 +36,35 @@ gulp.task('t-js', () =>
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(outpath.js))
 );
+function t_sass(){
+    gulp.src(res.css)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write('./maps'))
+        .pipe(gulp.dest(outpath.css));
 
-gulp.task('t-imgs',function(){
+
+}
+function t_js(){
+    gulp.src(res.js)
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(sourcemaps.write('./maps'))
+        .pipe(gulp.dest(outpath.js))
+}
+function t_img(){
     gulp.src(res.imgs)
         .pipe(gulp.dest(outpath.imgs))
+}
+function t_html(){
+    gulp.src([res.html,res.pages])
+        .pipe(gulp.dest(outpath.html))
+}
+
+gulp.task('t-imgs',function(){
+    t_img();
 });
 
 gulp.task('t-html',function(){
@@ -60,10 +85,10 @@ gulp.task('serve', function() {
 });
 
 gulp.task('watch',function(){
-    watch(res.css,['t-sass']);
-    watch(res.js,['t-js']);
-    watch([res.html,res.pages],['t-html']);
-    watch(res.imgs,['t-imgs']);
-});
+    watch(res.css,t_sass);
+    watch(res.js,t_js);
+    watch([res.html,res.pages],t_html);
+    watch(res.imgs,t_img)
+})
 gulp.task('build',['t-sass','t-js','t-html','t-imgs']);
 gulp.task('default',['watch','serve']);

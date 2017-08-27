@@ -9,6 +9,7 @@ body {
     .content-block__left {
       background: $white;
       padding-top: 20px;
+      margin-bottom:20px;
       text-align: center;
       .top {
         border-bottom: 1px solid $gray_border;
@@ -90,8 +91,11 @@ body {
       background: $white;
       padding-bottom: 120px;
       margin-left: 20px;
+      margin-right:20px;
       padding-left: 20px;
       h3{
+        margin-top:0;
+        padding-top:20px;
         text-align: left;
         padding-left: 20px;
         font-weight: 200;

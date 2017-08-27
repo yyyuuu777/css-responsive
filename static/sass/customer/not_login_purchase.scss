@@ -1,0 +1,111 @@
+@import "./header.scss";
+@import "./common.scss";
+@import "./footer.scss";
+@import "./value.scss";
+
+body{
+  h3{
+    height: 40px;
+    background:$main_color ;
+    line-height: 40px;
+    color: $white;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .package-block{
+    background: $white;
+    padding-bottom: 20px;
+    ul{
+      text-align: left;
+      width: 100%;
+      padding-right: 20px;
+      li{
+        text-align: center;
+        section{
+          padding: 0 20px;
+          margin-left: 20px;
+          border: 1px solid $gray_border;
+          .des{
+            p{
+              border-bottom: 1px solid $gray_border;
+              height: 40px;
+              line-height: 40px;
+              font-size: $font_big_size;
+              text-align: center;
+              color: $font_normal_color;
+            }
+          }
+          p{
+            margin: 0;
+          }
+          &>p:nth-of-type(1){
+            padding-top: 30px;
+            font-size: 30px;
+            color: $main_color;
+            margin: 0;
+          }
+          &>p:nth-of-type(2){
+            border-radius: 10px;
+            color: $white;
+            background: $main_color;
+            width: 60%;
+            text-align: center;
+            font-size: $font_normal_size;
+            margin: 10px auto;
+          }
+          &>p:nth-of-type(3){
+            border-bottom: 1px solid $gray_border;
+            padding-bottom: 15px;
+            font-size: $font_normal_size;
+            color: $font_normal_color;
+          }
+          button{
+            width: 80%;
+            height: 44px;
+            background: $main_color;
+            color: $white;
+            font-size: $font_big_size;
+            margin: 20px auto;
+          }
+        }
+      }
+    }
+  }
+  .vip-advance{
+    background: $white;
+    padding-bottom: 20px;
+    h3{
+      margin-bottom: 0;
+    }
+      ul{
+        text-align: left;
+        width: 100%;
+        padding-right: 20px;
+        li{
+          margin-top: 20px;
+          section{
+            box-sizing: border-box;
+            padding: 30px 10px 0;
+            text-align: center;
+            height: 220px;
+            background: $gray_border;
+            margin-left: 20px;
+            img{
+              height: 58px;
+            }
+            p{
+              margin: 0;
+            }
+            &>p:nth-of-type(1){
+              margin-bottom: 12px;
+              margin-top: 26px;
+            }
+            &>p:nth-of-type(2){
+              font-size: $font_normal_size;
+              color: #999999;
+            }
+          }
+        }
+      }
+  }
+}

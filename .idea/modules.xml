@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/css-responsive.iml" filepath="$PROJECT_DIR$/.idea/css-responsive.iml" />
       <module fileurl="file://$PROJECT_DIR$/../xynetdisc/.idea/xunetdisc.iml" filepath="$PROJECT_DIR$/../xynetdisc/.idea/xunetdisc.iml" />
     </modules>
   </component>

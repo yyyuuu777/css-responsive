@@ -3,6 +3,7 @@
 @import "./footer.scss";
 @import "./res-menu.scss";
 @import "./item.scss";
+@import "./value.scss";
 
 $normal_font_size: 14px;
 $input_border: #39c2F0;
@@ -11,24 +12,14 @@ body {
     background: #000;
     padding-top: 50px;
   }
-  .left-aside{
+  .aside-guide-block{
+    background: $white;
     aside{
-      text-align: center;
-      background: #fff;
-      font-size: 14px;
-      border-radius: 5px;
-      ul{
-          padding-left:0;
-        li{ 
-          padding: 8px 15px 5px 8px;
-          &:hover{
-              background:gray;
-              cursor:pointer;
-              color:#fff;
-          }
-        }
-      }
+      margin-top: 0;
+      padding-top: 10px;
     }
+  }
+  .left-aside{
     .left-aside__advance{
       background: #fff;
       border-radius: 5px;
@@ -54,17 +45,37 @@ body {
         line-height: 40px;
       }
     }
+    .file-content__content{
+      margin-left: 20px;
+      background: red;
+      margin-top: 10px;
+      min-height: 710px;
+    }
+
   }
   aside {
-    text-align: left;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
     margin-top: 10px;
+    padding-top: 20px;
+    ul{
+      padding-left:0;
+      li{
+        padding: 0 15px 0 8px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        &:hover{
+          background:gray;
+          cursor:pointer;
+          color:#fff;
+        }
+      }
+    }
     .aside__left {
       margin-bottom: 10px;
-    }
-    .aside__right {
-      button {
-        margin-right: 5px;
-      }
     }
     input {
       border: 1px solid $input_border;
