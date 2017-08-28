@@ -4,39 +4,40 @@
 @import "./res-menu.scss";
 @import "./item.scss";
 @import "./value.scss";
+@import "./dialog.scss";
 
 $normal_font_size: 14px;
 $input_border: #39c2F0;
 body {
-  #menu{
+  #menu {
     background: #000;
     padding-top: 50px;
   }
-  .aside-guide-block{
+  .aside-guide-block {
     background: $white;
-    aside{
+    aside {
       margin-top: 0;
       padding-top: 10px;
     }
   }
-  .left-aside{
-    .left-aside__advance{
+  .left-aside {
+    .left-aside__advance {
       background: #fff;
       border-radius: 5px;
       padding-bottom: 20px;
-      &>p:nth-of-type(3){
+      & > p:nth-of-type(3) {
         text-align: center;
       }
-      span{
+      span {
         font-size: 14px;
         color: #666666;
       }
-      .btn{
+      .btn {
         background: #39C2F0;
         margin-top: 20px;
         color: #fff;
       }
-      h3{
+      h3 {
         background: #39C2F0;
         font-size: 16px;
         color: #fff;
@@ -45,7 +46,7 @@ body {
         line-height: 40px;
       }
     }
-    .file-content__content{
+    .file-content__content {
       margin-left: 20px;
       background: red;
       margin-top: 10px;
@@ -60,17 +61,17 @@ body {
     text-align: center;
     margin-top: 10px;
     padding-top: 20px;
-    ul{
-      padding-left:0;
-      li{
+    ul {
+      padding-left: 0;
+      li {
         padding: 0 15px 0 8px;
         height: 50px;
         line-height: 50px;
         padding: 0;
-        &:hover{
-          background:gray;
-          cursor:pointer;
-          color:#fff;
+        &:hover {
+          background: gray;
+          cursor: pointer;
+          color: #fff;
         }
       }
     }
@@ -91,6 +92,73 @@ body {
         height: 28px;
         padding: 1px 0;
 
+      }
+    }
+  }
+  .create-file-dialog {
+    input {
+      height: 44px;
+      padding-left: 15px;
+      border: 1px solid #DCDCDC;
+    }
+  }
+  .share-dialog {
+    text-align: left;
+    padding-top: 20px !important;
+      input,textarea{
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid $deep_gray_border;
+        margin-right: 10px;
+        border-radius: 2px;
+      }
+      button{
+        height: 44px;
+        background: $main_color;
+        color: $white;
+        line-height: 44px;
+        font-size: $font_big_size;
+      }
+      div{
+        margin-top: 30px;
+        section{
+          margin-top: 10px;
+        }
+      }
+      & > div:nth-of-type(1) {
+        &>p:nth-of-type(2){
+          color: $main_color;
+          font-size:$font-big_size;
+          position: relative;
+          padding-left: 38px;
+          img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 28px;
+            margin: auto;
+          }
+        }
+      }
+    &>div:nth-of-type(1){
+      margin-top: 0;
+    }
+    &>div:nth-of-type(3){
+      &>span:nth-of-type(1){
+        font-size: $font_big_size;
+        color: $font_strong_color;
+      }
+      &>span:nth-of-type(2){
+        font-size: $font_normal_size;
+        color: #999999;
+      }
+    }
+    &> div:nth-of-type(4){
+      textarea{
+        height: 130px;
+        width: 100%;
+        margin-top: 10px;
       }
     }
   }

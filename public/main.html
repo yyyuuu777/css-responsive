@@ -109,6 +109,59 @@
         </section>
     </div>
 
+    <!--create file dialog-->
+    <div class="dialog pure-u-lg-7-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="dialog">
+        <section class="head dialog-head">
+            <h5>新建文件夹</h5>
+        </section>
+        <section class="body create-file-dialog">
+            <input type="text" placeholder="文件夹名字" class="pure-u-22-24 pure-u-lg-16-24">
+        </section>
+        <section class="bottom  ">
+            <button class="btn sure">创建</button>
+            <button class="btn cancel">取消</button>
+        </section>
+    </div>
+
+    <!--dialog for share -->
+    <div class="dialog pure-u-lg-7-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="share-dialog">
+        <section class="dialog-head">
+            <h5>分享</h5>
+        </section>
+        <section class="body share-dialog">
+            <div>
+                <p>分享链接：</p>
+                <section class="pure-g">
+                    <input type="text" class="pure-u-lg-19-24 pure-u-1" placeholder="文件夹名字">
+                    <button class="btn pure-u-lg-4-24 pure-u-1">复制</button>
+                </section>
+                <p>
+                    <img src="./static/imgs/lock.png" alt="">
+                    设为私密文件
+                </p>
+            </div>
+            <div>
+                <p>嵌入密码</p>
+                <section class="pure-g">
+                    <input type="text" class="pure-u-lg-19-24 pure-u-1">
+                    <button class="btn pure-u-lg-4-24 pure-u-1">复制</button>
+                </section>
+            </div>
+            <div>
+                <span>邮件分享:</span> <span> (将文件下载地址发送到好友邮箱)</span>
+                <section class="pure-g">
+                    <input type="text" class="pure-u-lg-19-24 pure-u-1">
+                    <button class="btn pure-u-lg-4-24 pure-u-1">分享</button>
+                </section>
+            </div>
+            <div>
+                <p>邮件内容</p>
+                <textarea type="textarea" placeholder="输入邮件内容120字以内(选填写)"></textarea>
+            </div>
+        </section>
+
+    </div>
+
     <section class="footer">
         <div class="pure-u-lg-3-4">
             <ul class="clearfix pure-u-sm-4-5 pure-u-4-5 pure-u-lg-1-3 pure-u-md-1-3">
@@ -123,7 +176,15 @@
         <p>Copyright2017v2版权所有</p>
     </section>
     <script src="//localhost:35729/livereload.js"></script>
-    <script src="./static/js/ui.js"></script>
+    <script src="./static/js/Util.js"></script>
+    <script>
+
+        var share_d = new util().initDialog('dialog', function () {
+            alert(1);
+        });
+        share_d.show_dialog();
+
+    </script>
     </body>
     </html>
 
