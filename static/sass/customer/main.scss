@@ -101,6 +101,10 @@ body {
       padding-left: 15px;
       border: 1px solid #DCDCDC;
     }
+    p{
+      line-height: 30px;
+      color: $font-strong_color;
+    }
   }
   .share-dialog {
     text-align: left;
@@ -160,6 +164,122 @@ body {
         width: 100%;
         margin-top: 10px;
       }
+    }
+  }
+
+  //share by pwd
+  .share-dialog-pwd {
+    text-align: left;
+    padding-top: 20px !important;
+    .pure-g{
+      section{
+        margin-top: 0;
+      }
+      .cp-link{
+        margin-top: 0;
+          .btn{
+            margin-left: 10px;
+            padding: 3px 9px;
+            width: 100%;
+          }
+      }
+    }
+    .catch-pwd{
+      position: relative;
+      margin-top: 30px;
+      .des{
+        position: relative;
+        padding-left: 38px;
+      }
+        span{
+          display: inline-block;
+          height: 44px;
+          line-height: 44px;
+        }
+    }
+    input,textarea{
+      height: 44px;
+      padding-left: 15px;
+      border: 1px solid $deep_gray_border;
+      border-radius: 2px;
+    }
+    button{
+      height: 44px;
+      background: $main_color;
+      color: $white;
+      line-height: 44px;
+      width: 100%;
+      font-size: $font_big_size;
+      margin-left: 10px;
+      margin-top: 0;
+    }
+    div{
+      margin-top: 30px;
+      section{
+        margin-top: 10px;
+      }
+    }
+    & > div:nth-of-type(1) {
+      &>p:nth-of-type(2){
+        font-size:$font-big_size;
+        position: relative;
+        img{
+          position: absolute;
+          top: 0;
+          left: 10px;
+          bottom: 0;
+          width: 28px;
+          margin: auto;
+        }
+      }
+    }
+    &>div:nth-of-type(1){
+      margin-top: 0;
+    }
+    &>div:nth-of-type(3){
+      &>span:nth-of-type(1){
+        font-size: $font_big_size;
+        color: $font_strong_color;
+      }
+      &>span:nth-of-type(2){
+        font-size: $font_normal_size;
+        color: #999999;
+      }
+    }
+      textarea{
+        height: 130px;
+        width: 100%;
+        margin-top: 10px;
+    }
+  }
+  #upload-dialog{
+    .body{
+        .upload-content{
+            height: 200px;
+            border: 1px dashed $main_color;
+            background: $deep_gray_border;
+            input{
+              color: $white;
+            }
+        }G
+        .other{
+          input{
+            width: 100%;
+            display:block;
+            width: 100%;
+            margin:20px 0;
+            height: 44px;
+            padding: 3px 7px;
+            border: 1px solid $deep_gray_border;
+          }
+          button{
+            width: 100%;
+            height: 44px;
+            background: $main_color;
+            color: $white;
+            display: block;
+          }
+        }
     }
   }
 }

@@ -31,7 +31,9 @@
     padding: 40px 50px 30px; }
   .dialog .bottom {
     padding-bottom: 60px;
-    display: flex; }
+    display: flex;
+    width: 55%;
+    margin: 0 auto; }
     .dialog .bottom button {
       flex: 1;
       height: 44px; }

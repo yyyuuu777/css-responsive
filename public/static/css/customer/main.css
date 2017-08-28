@@ -430,7 +430,9 @@ Add transition to containers so they can push in and out.
     padding: 40px 50px 30px; }
   .dialog .bottom {
     padding-bottom: 60px;
-    display: flex; }
+    display: flex;
+    width: 55%;
+    margin: 0 auto; }
     .dialog .bottom button {
       flex: 1;
       height: 44px; }
@@ -517,6 +519,10 @@ body .create-file-dialog input {
   padding-left: 15px;
   border: 1px solid #DCDCDC; }
 
+body .create-file-dialog p {
+  line-height: 30px;
+  color: #333333; }
+
 body .share-dialog {
   text-align: left;
   padding-top: 20px !important; }
@@ -560,5 +566,92 @@ body .share-dialog {
     height: 130px;
     width: 100%;
     margin-top: 10px; }
+
+body .share-dialog-pwd {
+  text-align: left;
+  padding-top: 20px !important; }
+  body .share-dialog-pwd .pure-g section {
+    margin-top: 0; }
+  body .share-dialog-pwd .pure-g .cp-link {
+    margin-top: 0; }
+    body .share-dialog-pwd .pure-g .cp-link .btn {
+      margin-left: 10px;
+      padding: 3px 9px;
+      width: 100%; }
+  body .share-dialog-pwd .catch-pwd {
+    position: relative;
+    margin-top: 30px; }
+    body .share-dialog-pwd .catch-pwd .des {
+      position: relative;
+      padding-left: 38px; }
+    body .share-dialog-pwd .catch-pwd span {
+      display: inline-block;
+      height: 44px;
+      line-height: 44px; }
+  body .share-dialog-pwd input, body .share-dialog-pwd textarea {
+    height: 44px;
+    padding-left: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 2px; }
+  body .share-dialog-pwd button {
+    height: 44px;
+    background: #39c2f0;
+    color: #fff;
+    line-height: 44px;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 0; }
+  body .share-dialog-pwd div {
+    margin-top: 30px; }
+    body .share-dialog-pwd div section {
+      margin-top: 10px; }
+  body .share-dialog-pwd > div:nth-of-type(1) > p:nth-of-type(2) {
+    font-size: 16px;
+    position: relative; }
+    body .share-dialog-pwd > div:nth-of-type(1) > p:nth-of-type(2) img {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      bottom: 0;
+      width: 28px;
+      margin: auto; }
+  body .share-dialog-pwd > div:nth-of-type(1) {
+    margin-top: 0; }
+  body .share-dialog-pwd > div:nth-of-type(3) > span:nth-of-type(1) {
+    font-size: 16px;
+    color: #333333; }
+  body .share-dialog-pwd > div:nth-of-type(3) > span:nth-of-type(2) {
+    font-size: 14px;
+    color: #999999; }
+  body .share-dialog-pwd textarea {
+    height: 130px;
+    width: 100%;
+    margin-top: 10px; }
+
+body #upload-dialog .body .upload-content {
+  height: 200px;
+  border: 1px dashed #39c2f0;
+  background: #dddddd; }
+  body #upload-dialog .body .upload-content input {
+    color: #fff; }
+
+body #upload-dialog .body G
+.other input {
+  width: 100%;
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  height: 44px;
+  padding: 3px 7px;
+  border: 1px solid #dddddd; }
+
+body #upload-dialog .body G
+.other button {
+  width: 100%;
+  height: 44px;
+  background: #39c2f0;
+  color: #fff;
+  display: block; }
 
 /*# sourceMappingURL=../maps/customer/main.css.map */

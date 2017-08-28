@@ -14,20 +14,35 @@
         <link rel="stylesheet" href="../static/css/customer/purchase.css">
     </head>
     <body>
+
     <header class="header">
-        <section class="header__head pure-u-lg-7-8 pure-u-md-7-8 pure-u-xl-5-8">
+        <section class="pure-u-lg-7-8 pure-u-md-7-8 pure-u-xl-5-8">
             <div class="img-wrap">
                 <img src="../static/imgs/logo.png"/>
             </div>
             <section class="header__right_block hide-on-mobile">
-                <input type="text" class="header__input_search" placeholder="搜索"/>
-                <button class="header__btn__search btn">搜索</button>
-                <p class="header__status header__user">
-                    <img src="./static/imgs/notify.png" alt="">
-                    <img src="./static/imgs/user.png" alt="">
-                </p>
-                <p class="header__status">升级会员</p>
-                <p class="header__status">首页</p>
+                <div class="pure-g">
+                    <div class="pure-u-17-24">
+                        <div class="search-block">
+                            <input type="text" class="header__input_search" placeholder="搜索"/>
+                            <button class="header__btn__search btn">搜索</button>
+                        </div>
+                    </div>
+                    <div class="pure-u-7-24">
+                        <div class="status">
+                            <p class="header__status">首页</p>
+                            <p class="header__status">升级会员</p>
+                            <div class="header__status header__user">
+                                <div class="notify">
+                                    <img src="./static/imgs/notify.png" alt="">
+                                </div>
+                                <div class="head">
+                                    <img src="./static/imgs/user.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
         <div id="head-menu" class="header__menu">

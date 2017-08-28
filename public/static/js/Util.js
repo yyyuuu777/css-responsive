@@ -18,7 +18,7 @@
         this.dom_dialog = this.getDom(this.dialogId);
         this.addCloseBtn(this.dom_dialog.children[0]);
         this.callBack = callBack;
-        if (this.dom_dialog.children[2]) {
+        if (this.dom_dialog.children[2] && this.dom_dialog.children[2].className.indexOf("bottom") >= 0) {
             this.addEve([
             //todo:// change dome get way
             this.dom_dialog.children[2].children[0], this.dom_dialog.children[2].children[1]]);

@@ -109,22 +109,105 @@
         </section>
     </div>
 
+    <!--renameFile dialog-->
+    <div class="dialog pure-u-xl-7-24 pure-u-lg-12-24  pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="rename-dialog">
+        <section class="head dialog-head">
+            <h5>新建文件夹</h5>
+        </section>
+        <section class="body create-file-dialog">
+            <input type="text" placeholder="在这里输入新的名称" class="pure-u-22-24 pure-u-lg-16-24">
+        </section>
+        <section class="bottom ">
+            <button class="btn sure">确定</button>
+            <button class="btn cancel">取消</button>
+        </section>
+    </div>
+
     <!--create file dialog-->
-    <div class="dialog pure-u-lg-7-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="dialog">
+    <div class="dialog pure-u-xl-7-24 pure-u-lg-12-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="dialog">
         <section class="head dialog-head">
             <h5>新建文件夹</h5>
         </section>
         <section class="body create-file-dialog">
             <input type="text" placeholder="文件夹名字" class="pure-u-22-24 pure-u-lg-16-24">
         </section>
-        <section class="bottom  ">
+        <section class="bottom ">
             <button class="btn sure">创建</button>
             <button class="btn cancel">取消</button>
         </section>
     </div>
 
+    <!--upload file-->
+    <div class="dialog pure-u-xl-7-24 pure-u-lg-12-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="upload-dialog">
+        <section class="head dialog-head">
+            <h5>上传文件</h5>
+        </section>
+        <section class="body upload-dialog">
+            <div class="upload-content">
+                <input type="file" value="选择文件" class="pure-u-22-24 pure-u-lg-16-24">
+             </div>
+            <div class="other">
+                <input type="text" placeholder="在这里输入标签">
+                <button class="btn">完成</button>
+            </div>
+        </section>
+    </div>
+
+    <!--del the file-->
+    <div class="dialog pure-u-lg-12-24 pure-u-xl-7-24  pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="del-dialog">
+        <section class="head dialog-head">
+            <h5>删除</h5>
+        </section>
+        <section class="body create-file-dialog">
+            <p>确认要把文件放入回收站吗?</p>
+            <p>删除的文件10天内可通过回收站还原</p>
+        </section>
+        <section class="bottom ">
+            <button class="btn sure">删除</button>
+            <button class="btn cancel">取消</button>
+        </section>
+    </div>
+
+    <!--share via password-->
+    <div class="dialog pure-u-lg-12-24 pure-u-xl-7-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="share-pwd-dialog">
+        <section class="dialog-head">
+            <h5>分享</h5>
+        </section>
+        <section class="body share-dialog-pwd">
+            <div>
+                <p>分享链接：</p>
+                <section class="pure-g">
+                    <input type="text" class="pure-u-lg-15-24 pure-u-1" placeholder="文件夹名字">
+                    <section class="cp-link pure-u-lg-9-24 pure-u-1">
+                        <button class="btn ">复制链接和密码</button>
+                     </section>
+                </section>
+                <p class="catch-pwd">
+                    <span>查看密码</span>
+                    <input type="text" class="pure-u-lg-1-6" placeholder="密码">
+                    <span class="des">
+                    <img src="./static/imgs/lock.png" alt="">
+                        设为私密文件
+                    </span>
+                </p>
+            </div>
+            <div>
+                <span>邮件分享:</span> <span> (将文件下载地址发送到好友邮箱)</span>
+                <section class="pure-g">
+                    <input type="text" class="pure-u-lg-19-24 pure-u-1">
+                    <section class="pure-u-lg-4-24 pure-u-1">
+                        <button class="btn ">分享</button>
+                     </section>
+                </section>
+            </div>
+            <div>
+                <p>邮件内容</p>
+                <textarea type="textarea" placeholder="输入邮件内容120字以内(选填写)"></textarea>
+            </div>
+        </section>
+    </div>
     <!--dialog for share -->
-    <div class="dialog pure-u-lg-7-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="share-dialog">
+    <div class="dialog pure-u-xl-7-24 pure-u-lg-12-24 pure-u-23-24 pure-u-md-21-24 pure-u-sm-21-24" id="share-dialog">
         <section class="dialog-head">
             <h5>分享</h5>
         </section>
@@ -159,7 +242,6 @@
                 <textarea type="textarea" placeholder="输入邮件内容120字以内(选填写)"></textarea>
             </div>
         </section>
-
     </div>
 
     <section class="footer">
@@ -179,7 +261,7 @@
     <script src="./static/js/Util.js"></script>
     <script>
 
-        var share_d = new util().initDialog('dialog', function () {
+        var share_d = new util().initDialog('upload-dialog', function () {
             alert(1);
         });
         share_d.show_dialog();
